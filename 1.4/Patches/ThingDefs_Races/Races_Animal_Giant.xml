@@ -44,9 +44,10 @@
 						<woolAmount>200</woolAmount>
 					</li>
 					<li Class="CompProperties_Milkable">
-						<milkDef>ThrumboMilk</milkDef>
+						<milkDef>Milk</milkDef>
 						<milkIntervalDays>15</milkIntervalDays>
-						<milkAmount>5</milkAmount>
+						<milkAmount>10</milkAmount>
+						<milkFemaleOnly>false</milkFemaleOnly>
 					</li>
 				</comps>
 			</value>
@@ -60,9 +61,10 @@
 					<woolAmount>200</woolAmount>
 				</li>
 				<li Class="CompProperties_Milkable">
-					<milkDef>ThrumboMilk</milkDef>
-					<milkIntervalDays>15</milkIntervalDays>
-					<milkAmount>5</milkAmount>
+					<milkDef>Milk</milkDef>
+					<milkIntervalDays>Milk</milkIntervalDays>
+					<milkAmount>10</milkAmount>
+					<milkFemaleOnly>false</milkFemaleOnly>
 				</li>
 			</value>
 		</match>
@@ -82,12 +84,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/MoveSpeed</xpath>
-		<value>
-			<MoveSpeed>6</MoveSpeed>
-		</value>
-	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/ArmorRating_Sharp</xpath>
@@ -106,7 +102,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/ArmorRating_Heat</xpath>
 		<value>
-			<ArmorRating_Heat>0.70</ArmorRating_Heat>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
 		</value>
 	</Operation>
 
