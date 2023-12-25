@@ -12,7 +12,7 @@
 		<xpath>*/ThingDef[defName = "Thrumbo"]/race</xpath>
 		<value>
 			<nameOnTameChance>1</nameOnTameChance>
-			<nuzzleMtbHours>80</nuzzleMtbHours>
+			<nuzzleMtbHours>72</nuzzleMtbHours>
 		</value>
 	</Operation>
 
@@ -31,27 +31,6 @@
 			</value>
 		</match>
 	</Operation>	
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName = "Thrumbo"]/race/baseBodySize</xpath>
-		<value>
-			<baseBodySize>7</baseBodySize>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName = "Thrumbo"]/race</xpath>
-		<value>
-			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName = "Thrumbo"]/race/wildness</xpath>
-		<value>
-			<wildness>0.9</wildness>
-		</value>
-	</Operation>
 
 	<Operation Class="PatchOperationConditional">
 	<xpath>*/ThingDef[defName = "Thrumbo"]/comps</xpath>
