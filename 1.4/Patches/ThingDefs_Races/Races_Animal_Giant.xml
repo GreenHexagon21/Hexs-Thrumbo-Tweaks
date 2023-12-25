@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases</xpath>
+		<value>
+			<Flammability>0.2</Flammability>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/race</xpath>
+		<value>
+			<nameOnTameChance>1</nameOnTameChance>
+			<nuzzleMtbHours>80</nuzzleMtbHours>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/race/packAnimal</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName = "Thrumbo"]/race</xpath>
+			<value>
+				<packAnimal>true</packAnimal>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>*/ThingDef[defName = "Thrumbo"]/race/packAnimal</xpath>
+			<value>
+				<packAnimal>true</packAnimal>	
+			</value>
+		</match>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/race/baseBodySize</xpath>
+		<value>
+			<baseBodySize>7</baseBodySize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/race</xpath>
+		<value>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/race/wildness</xpath>
+		<value>
+			<wildness>0.9</wildness>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<xpath>*/ThingDef[defName = "Thrumbo"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName = "Thrumbo"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Shearable">
+						<woolDef>ThrumboWool</woolDef>
+						<shearIntervalDays>60</shearIntervalDays>
+						<woolAmount>200</woolAmount>
+					</li>
+					<li Class="CompProperties_Milkable">
+						<milkDef>ThrumboMilk</milkDef>
+						<milkIntervalDays>15</milkIntervalDays>
+						<milkAmount>5</milkAmount>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>*/ThingDef[defName = "Thrumbo"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Shearable">
+					<woolDef>ThrumboWool</woolDef>
+					<shearIntervalDays>60</shearIntervalDays>
+					<woolAmount>200</woolAmount>
+				</li>
+				<li Class="CompProperties_Milkable">
+					<milkDef>ThrumboMilk</milkDef>
+					<milkIntervalDays>15</milkIntervalDays>
+					<milkAmount>5</milkAmount>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Kibble"]/ingestible</xpath>
+		<value>
+			<maxNumToIngestAtOnce>200</maxNumToIngestAtOnce>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "Hay"]/ingestible</xpath>
+		<value>
+			<maxNumToIngestAtOnce>200</maxNumToIngestAtOnce>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/MoveSpeed</xpath>
+		<value>
+			<MoveSpeed>6</MoveSpeed>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Thrumbo"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>0.70</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+</Patch>

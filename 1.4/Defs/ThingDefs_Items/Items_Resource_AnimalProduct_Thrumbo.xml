@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+  <ThingDef ParentName="WoolBase">
+    <defName>ThrumboWool</defName>
+    <label>thrumbo Wool</label>
+    <description>Rare, beautiful and provides very good insulation. Thrumbo Wool clothes is a extravagances.</description>
+    <graphicData>
+      <color>(233,233,233)</color>
+    </graphicData>
+    <statBases>
+      <Mass>0.032</Mass>
+      <MarketValue>23.3</MarketValue>
+      <MaxHitPoints>320</MaxHitPoints>
+      <Flammability>0.32</Flammability>
+      <DeteriorationRate>3.2</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.32</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.32</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.32</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>32</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(233,233,233)</color>
+      <commonality>0.32</commonality>
+      <statFactors>
+        <Flammability>0.32</Flammability>
+        <MarketValue>1.32</MarketValue>
+        <MaxHitPoints>3.2</MaxHitPoints>
+		<WorkToBuild>3.2</WorkToBuild>
+		<WorkToMake>3.2</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+    
+</Defs>
