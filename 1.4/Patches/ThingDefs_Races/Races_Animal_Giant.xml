@@ -45,8 +45,8 @@
 					</li>
 					<li Class="CompProperties_Milkable">
 						<milkDef>Milk</milkDef>
-						<milkIntervalDays>15</milkIntervalDays>
-						<milkAmount>10</milkAmount>
+						<milkIntervalDays>16</milkIntervalDays>
+						<milkAmount>30</milkAmount>
 						<milkFemaleOnly>false</milkFemaleOnly>
 					</li>
 				</comps>
@@ -62,8 +62,8 @@
 				</li>
 				<li Class="CompProperties_Milkable">
 					<milkDef>Milk</milkDef>
-					<milkIntervalDays>Milk</milkIntervalDays>
-					<milkAmount>10</milkAmount>
+					<milkIntervalDays>16</milkIntervalDays>
+					<milkAmount>30</milkAmount>
 					<milkFemaleOnly>false</milkFemaleOnly>
 				</li>
 			</value>
